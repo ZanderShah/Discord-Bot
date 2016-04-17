@@ -2,9 +2,9 @@ import discord
 import asyncio
 import random
 import wolframalpha
-from DiscordBot.keys import  wolf, token
+
 client = discord.Client()
-mathGod = wolframalpha.Client(wolf)
+mathGod = wolframalpha.Client(input())
 
 #https://discordapp.com/oauth2/authorize?client_id=171079718131466240&scope=bot&permissions=66186303
 
@@ -42,4 +42,4 @@ async def on_message(message):
     elif message.content.startswith('.ay'):
         await client.send_message(message.channel, 'Ayyyyyyyyy')
 
-client.run(token)
+client.run(input())
