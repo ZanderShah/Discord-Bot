@@ -32,7 +32,7 @@ async def on_message(message):
         upper = 101
         if message.content.startswith('.roll ') and message.content[6:].isdigit():
             upper = int(message.content[6:])
-        await client.send_message(message.channel, random.randrange(1, upper, 1))
+        await client.send_message(message.channel, random.randrange(1, max(upper, 2), 1))
     elif message.content.startswith('.hello'):
         await client.send_message(message.channel, 'Hello, {0}'.format(message.author))
     elif message.content.startswith('.math '):
