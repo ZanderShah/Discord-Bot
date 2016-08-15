@@ -1,4 +1,4 @@
-Zander Bot
-==========
+Discord Bot
+===========
 
-Python bot for Discord.
+Simple bot for discord
